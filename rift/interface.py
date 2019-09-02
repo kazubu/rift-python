@@ -44,7 +44,7 @@ class Interface:
         # TODO: Find a portable (or even non-portable) way to get the interface MTU
         # TODO: Find a way to be informed whenever the interface MTU changes
         # TODO: Check the hard-coded MTU value: 1400 or 1500
-        mtu = 1400
+        mtu = 1514
         return mtu
 
     class State(enum.Enum):
