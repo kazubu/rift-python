@@ -483,7 +483,7 @@ class Node:
         self.my_node_tie_seq_nrs[common.ttypes.TieDirectionType.North] = 0
         self.my_node_tie_packet_infos = {}     # Indexed by neighbor direction
         self.peer_node_tie_packet_infos = {}   # Indexed by tie_id
-        self._originating_default = False
+        self._originating_default = self.get_config_attribute("generate_defaults", True)
         self._my_south_prefix_tie_packet_info = None
         self._my_north_prefix_tie_packet_info = None
         self._my_pos_disagg_tie_packet_info = None

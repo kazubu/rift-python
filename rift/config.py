@@ -48,6 +48,7 @@ SCHEMA = {
                             'passive': {'type': 'boolean'},
                             'level': {'type': 'level'},
                             'systemid': {'type': 'integer', 'min': 0},
+                            'generate_defaults': {'type': 'boolean'},
                             'rx_lie_mcast_address': {'type': 'ipv4address'},
                             'tx_lie_mcast_address': {'type': 'ipv4address'},
                             'rx_lie_v6_mcast_address': {'type': 'ipv6address'},
